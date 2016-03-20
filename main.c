@@ -246,7 +246,7 @@ int main( int argc, char** argv) {
     size_t count_of_files = argc - 1;
     char **files = &argv[1]; 
     work_with_file(count_of_files, files);
-        if( words_and_counts ) {
+    if( words_and_counts ) {
         qsort(words_and_counts,words_and_counts_used,sizeof(*words_and_counts),structcmp_words_and_counts);
         for( size_t i = 0; i < words_and_counts_used; ++i ){
             printf("%s %lu\n", words_and_counts[i].word, words_and_counts[i].count);
